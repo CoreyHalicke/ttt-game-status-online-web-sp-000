@@ -77,5 +77,6 @@ def winner(board)
   if won?(board) == true
     winning_array = won?(board)
     return winning_array[0]
+  end
 end
 
