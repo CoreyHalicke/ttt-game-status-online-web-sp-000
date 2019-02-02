@@ -50,7 +50,6 @@ def won?(board)
     board.any?{|i| i == " "}
       return false 
   end
-  
 end
 
 
@@ -64,7 +63,8 @@ def full?(board)
 end
 
 def draw?(board)
-  
+  if won(board) == false
+    
 end
 
 
