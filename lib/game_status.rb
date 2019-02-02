@@ -50,6 +50,7 @@ end
 def full?(board)
   board.detect{|i| i != "X" || i != "O"}
   
+  
 end
 
 
