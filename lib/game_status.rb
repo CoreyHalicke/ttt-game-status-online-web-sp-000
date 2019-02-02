@@ -44,8 +44,9 @@ def won?(board)
     end
   end
   #board.none?{|i| i.is_a?(String)}
-  board.any?{|i| i != " "}
-  board.all?{|i| i != "X" || i != "O"}
+  if board.any?{|i| i != " "}
+    
+  
 end
 
 
