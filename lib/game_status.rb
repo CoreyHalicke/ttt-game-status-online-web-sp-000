@@ -43,7 +43,8 @@ def won?(board)
       false
     end
   end
-  board.none?{|i| i.is_a?(String)}
+  #board.none?{|i| i.is_a?(String)}
+  board.any?{|i| i != " "}
 end
 
 
