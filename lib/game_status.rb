@@ -43,7 +43,7 @@ def won?(board)
       false
     end
   end
-  #board.none?{|i| i.is_a?(String)}
+  
   if board.all?{|i| i == " "}
     return false
   else
@@ -55,9 +55,11 @@ end
 
 
 def full?(board)
-  board.detect{|i| i != "X" || i != "O"}
-  #board.detect{|i| i ==
-  
+  if board.all?{|i| i == "X" || i == "O"}
+    return true
+  else
+    board.any?{|i| i == " "}
+  end
 end
 
 
