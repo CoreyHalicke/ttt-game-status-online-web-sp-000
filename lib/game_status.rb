@@ -59,7 +59,7 @@ def full?(board)
     return true
   else
     board.any?{|i| i == " "}
-      return true
+      return false
   end
 end
 
